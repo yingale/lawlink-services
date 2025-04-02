@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, Feather } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -12,24 +12,33 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md px-4 py-3 md:py-4">
+    <nav className="sticky top-0 z-50 bg-[#0A1629] text-white shadow-md px-4 py-3 md:py-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="flex items-center">
-          <span className="text-primary font-playfair text-2xl md:text-3xl font-bold">LawLink</span>
-          <span className="text-secondary font-playfair text-2xl md:text-3xl font-bold">India</span>
+        <Link to="/" className="flex items-center gap-2">
+          <div className="h-10 w-10 md:h-12 md:w-12 rounded-full overflow-hidden">
+            <img 
+              src="/lovable-uploads/3232c0d4-1808-40fd-8fb4-ebe3c3300a05.png" 
+              alt="Kavision Solutions Logo" 
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div>
+            <span className="text-white font-playfair text-xl md:text-2xl font-bold">Kavision</span>
+            <span className="text-[#f48fb1] font-playfair text-xl md:text-2xl font-bold">Solutions</span>
+          </div>
         </Link>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link to="/" className="text-gray-800 hover:text-primary font-medium transition-all">Home</Link>
-          <Link to="/services" className="text-gray-800 hover:text-primary font-medium transition-all">Services</Link>
-          <Link to="/about" className="text-gray-800 hover:text-primary font-medium transition-all">About Us</Link>
-          <Link to="/team" className="text-gray-800 hover:text-primary font-medium transition-all">Our Team</Link>
-          <Link to="/contact" className="text-gray-800 hover:text-primary font-medium transition-all">Contact</Link>
+          <Link to="/" className="text-white hover:text-[#f48fb1] font-medium transition-all">Home</Link>
+          <Link to="/services" className="text-white hover:text-[#f48fb1] font-medium transition-all">Services</Link>
+          <Link to="/about" className="text-white hover:text-[#f48fb1] font-medium transition-all">About Us</Link>
+          <Link to="/team" className="text-white hover:text-[#f48fb1] font-medium transition-all">Our Team</Link>
+          <Link to="/contact" className="text-white hover:text-[#f48fb1] font-medium transition-all">Contact</Link>
         </div>
         
         <div className="hidden md:flex items-center">
-          <Button className="bg-primary hover:bg-primary/90 text-white flex items-center gap-2">
+          <Button className="bg-[#f48fb1] hover:bg-[#f48fb1]/90 text-[#0A1629] flex items-center gap-2">
             <Phone size={18} />
             <span>Contact Now</span>
           </Button>
@@ -37,7 +46,7 @@ const Navbar = () => {
         
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <Button variant="ghost" size="icon" onClick={toggleMenu}>
+          <Button variant="ghost" size="icon" onClick={toggleMenu} className="text-white">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </Button>
         </div>
@@ -45,14 +54,14 @@ const Navbar = () => {
       
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-md z-50 animate-fade-in">
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-[#0A1629] shadow-md z-50 animate-fade-in">
           <div className="flex flex-col p-4 space-y-3">
-            <Link to="/" className="text-gray-800 hover:text-primary py-2 font-medium" onClick={toggleMenu}>Home</Link>
-            <Link to="/services" className="text-gray-800 hover:text-primary py-2 font-medium" onClick={toggleMenu}>Services</Link>
-            <Link to="/about" className="text-gray-800 hover:text-primary py-2 font-medium" onClick={toggleMenu}>About Us</Link>
-            <Link to="/team" className="text-gray-800 hover:text-primary py-2 font-medium" onClick={toggleMenu}>Our Team</Link>
-            <Link to="/contact" className="text-gray-800 hover:text-primary py-2 font-medium" onClick={toggleMenu}>Contact</Link>
-            <Button className="bg-primary hover:bg-primary/90 text-white w-full flex items-center justify-center gap-2 mt-2">
+            <Link to="/" className="text-white hover:text-[#f48fb1] py-2 font-medium" onClick={toggleMenu}>Home</Link>
+            <Link to="/services" className="text-white hover:text-[#f48fb1] py-2 font-medium" onClick={toggleMenu}>Services</Link>
+            <Link to="/about" className="text-white hover:text-[#f48fb1] py-2 font-medium" onClick={toggleMenu}>About Us</Link>
+            <Link to="/team" className="text-white hover:text-[#f48fb1] py-2 font-medium" onClick={toggleMenu}>Our Team</Link>
+            <Link to="/contact" className="text-white hover:text-[#f48fb1] py-2 font-medium" onClick={toggleMenu}>Contact</Link>
+            <Button className="bg-[#f48fb1] hover:bg-[#f48fb1]/90 text-[#0A1629] w-full flex items-center justify-center gap-2 mt-2">
               <Phone size={18} />
               <span>Contact Now</span>
             </Button>

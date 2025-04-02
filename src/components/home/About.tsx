@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Feather } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const About = () => {
@@ -25,13 +25,17 @@ const About = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -z-10 w-full h-full bg-secondary rounded-lg top-4 left-4"></div>
+            <div className="absolute -z-10 w-full h-full bg-[#f48fb1] rounded-lg top-4 left-4"></div>
           </div>
           
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">About Our Legal Firm</h2>
+            <div className="flex items-center gap-3 mb-4">
+              <Feather className="text-[#f48fb1]" size={24} />
+              <h2 className="text-lg font-medium italic">Where Words Meet Protection</h2>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0A1629] mb-6 font-playfair">About Kavision Solutions</h2>
             <p className="text-gray-700 mb-4">
-              Founded in 2005, LawLink India has established itself as a trusted legal service provider specializing in agreement drafting and out-of-court settlements across India.
+              Founded in 2018, Kavision Solutions has established itself as a trusted legal service provider specializing in agreement drafting and out-of-court settlements across India.
             </p>
             <p className="text-gray-700 mb-6">
               Our team of experienced attorneys brings diverse expertise and a deep understanding of Indian legal frameworks to provide practical solutions tailored to each client's unique needs.
@@ -40,13 +44,13 @@ const About = () => {
             <div className="space-y-3 mb-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-2">
-                  <CheckCircle className="text-secondary flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-[#f48fb1] flex-shrink-0 mt-1" size={20} />
                   <span className="text-gray-700">{benefit}</span>
                 </div>
               ))}
             </div>
             
-            <Button asChild className="bg-primary hover:bg-primary/90">
+            <Button asChild className="bg-[#0A1629] hover:bg-[#0A1629]/90">
               <Link to="/about">Learn More About Us</Link>
             </Button>
           </div>
