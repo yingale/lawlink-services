@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Feather } from 'lucide-react';
+import { Scale } from 'lucide-react';
 
 const CTA = () => {
   return (
@@ -11,7 +11,7 @@ const CTA = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex justify-center mb-6">
-            <Feather className="text-[#f48fb1]" size={40} />
+            <Scale className="text-[#4299e1]" size={40} />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 font-playfair">
             Where Words Meet Protection
@@ -20,10 +20,10 @@ const CTA = () => {
             Our team of experienced attorneys is just a call away. Schedule a consultation today to discuss your legal needs.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="bg-[#f48fb1] hover:bg-[#f48fb1]/90 text-[#0A1629] font-medium">
+            <Button asChild size="lg" className="bg-[#4299e1] hover:bg-[#4299e1]/90 text-white font-medium">
               <Link to="/contact">Contact Us Now</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
               <Link to="/services">Explore Our Services</Link>
             </Button>
           </div>

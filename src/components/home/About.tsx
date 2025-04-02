@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { CheckCircle, Feather } from 'lucide-react';
+import { CheckCircle, Scale } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const About = () => {
@@ -25,12 +25,12 @@ const About = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -z-10 w-full h-full bg-[#f48fb1] rounded-lg top-4 left-4"></div>
+            <div className="absolute -z-10 w-full h-full bg-[#4299e1]/20 rounded-lg top-4 left-4"></div>
           </div>
           
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Feather className="text-[#f48fb1]" size={24} />
+              <Scale className="text-[#4299e1]" size={24} />
               <h2 className="text-lg font-medium italic">Where Words Meet Protection</h2>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0A1629] mb-6 font-playfair">About Kavision Solutions</h2>
@@ -44,7 +44,7 @@ const About = () => {
             <div className="space-y-3 mb-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-2">
-                  <CheckCircle className="text-[#f48fb1] flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-[#4299e1] flex-shrink-0 mt-1" size={20} />
                   <span className="text-gray-700">{benefit}</span>
                 </div>
               ))}

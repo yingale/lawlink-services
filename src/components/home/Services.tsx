@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { FileText, Users, Scale, Gavel, Handshake, Feather } from 'lucide-react';
+import { FileText, Users, Scale, Gavel, Handshake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -46,7 +46,7 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <Card key={index} className="border border-gray-200 hover:shadow-lg transition-all hover:border-[#f48fb1]">
+            <Card key={index} className="border border-gray-200 hover:shadow-lg transition-all hover:border-[#4299e1]">
               <CardHeader className="pb-2">
                 <div className="w-12 h-12 bg-[#0A1629]/10 text-[#0A1629] rounded-full flex items-center justify-center mb-4">
                   <service.icon size={24} />
@@ -57,7 +57,7 @@ const Services = () => {
                 <CardDescription className="text-base text-gray-600 mb-4">
                   {service.description}
                 </CardDescription>
-                <Link to="/services" className="text-[#0A1629] hover:text-[#f48fb1] font-medium inline-flex items-center transition-colors">
+                <Link to="/services" className="text-[#0A1629] hover:text-[#4299e1] font-medium inline-flex items-center transition-colors">
                   Learn More
                 </Link>
               </CardContent>
