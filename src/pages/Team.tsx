@@ -4,12 +4,12 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Helmet } from 'react-helmet';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const teamMembers = [
   {
     name: 'Ananya Sharma',
     title: 'Senior Partner',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     expertise: 'Corporate Law, Agreements',
     education: 'LLB, National Law School of India University',
     experience: '15+ years of experience',
@@ -18,7 +18,6 @@ const teamMembers = [
   {
     name: 'Vikram Mehta',
     title: 'Managing Partner',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     expertise: 'Dispute Resolution, Settlements',
     education: 'LLB, Delhi University',
     experience: '12+ years of experience',
@@ -27,7 +26,6 @@ const teamMembers = [
   {
     name: 'Priya Patel',
     title: 'Legal Consultant',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     expertise: 'Contract Law, Mediation',
     education: 'LLB, Mumbai University',
     experience: '8+ years of experience',
@@ -36,7 +34,6 @@ const teamMembers = [
   {
     name: 'Rajiv Kumar',
     title: 'Senior Associate',
-    image: 'https://images.unsplash.com/photo-1542190497-0cb529b707a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     expertise: 'Real Estate Law, Documentation',
     education: 'LLB, Bangalore University',
     experience: '10+ years of experience',
@@ -45,7 +42,6 @@ const teamMembers = [
   {
     name: 'Meera Verma',
     title: 'Legal Associate',
-    image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     expertise: 'Corporate Agreements, Compliance',
     education: 'LLB, Symbiosis Law School',
     experience: '5+ years of experience',
@@ -54,7 +50,6 @@ const teamMembers = [
   {
     name: 'Arjun Singh',
     title: 'Legal Associate',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     expertise: 'Commercial Contracts, Negotiation',
     education: 'LLB, Punjab University',
     experience: '7+ years of experience',
@@ -87,17 +82,19 @@ const Team = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {teamMembers.map((member, index) => (
-                <Card key={index} className="overflow-hidden border-0 shadow-lg">
-                  <div className="h-72 overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name} 
-                      className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
-                    />
-                  </div>
+                <Card key={index} className="border shadow-md hover:shadow-lg transition-all">
                   <CardContent className="pt-6">
-                    <h3 className="text-xl font-bold text-primary">{member.name}</h3>
-                    <p className="text-primary/70 font-medium">{member.title}</p>
+                    <div className="flex items-center mb-4">
+                      <Avatar className="h-12 w-12 bg-primary/10">
+                        <AvatarFallback className="text-primary font-medium">
+                          {member.name.split(' ').map(n => n[0]).join('')}
+                        </AvatarFallback>
+                      </Avatar>
+                      <div className="ml-4">
+                        <h3 className="text-xl font-bold text-primary">{member.name}</h3>
+                        <p className="text-primary/70 font-medium">{member.title}</p>
+                      </div>
+                    </div>
                     <p className="text-gray-600 mt-2">{member.expertise}</p>
                     <div className="mt-4 space-y-2 text-sm text-gray-700">
                       <p>{member.education}</p>
