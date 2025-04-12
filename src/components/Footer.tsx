@@ -86,6 +86,9 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               © {currentYear} LawLink India. All rights reserved.
             </p>
+            <p className="text-gray-400 text-sm mt-2 md:mt-0">
+              Developed and maintained by XYZ Solutions
+            </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-secondary text-sm transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-secondary text-sm transition-colors">Terms of Service</a>
