@@ -1,35 +1,35 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { FileText, Users, Scale, Gavel, Handshake } from 'lucide-react';
+import { FileText, Users, Scale, Home, Building, FileCheck, Heart, FileSignature } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
 const services = [
   {
+    icon: Heart,
+    title: 'Personal & Family Matters',
+    description: 'Civil matters, family matters, succession certificate, legal heirship certificate, and criminal matters.',
+  },
+  {
+    icon: Building,
+    title: 'Co-operative & Society Matters',
+    description: 'Co-operative society matters, formation of society, conveyance deed / deemed conveyance, and search reports.',
+  },
+  {
     icon: FileText,
-    title: 'Legal Agreements',
-    description: 'Expertly drafted legal documents tailored to your specific requirements, ensuring your interests are protected.',
+    title: 'Marriage & Deed Services',
+    description: 'Marriage registration, sale deeds, gift deeds, release deeds, partnership deeds, MOUs, wills, and power of attorney.',
   },
   {
-    icon: Handshake,
-    title: 'Out-of-Court Settlements',
-    description: 'Strategic negotiation and mediation services to resolve disputes without lengthy court proceedings.',
+    icon: FileSignature,
+    title: 'All Legal Drafting',
+    description: 'Professional drafting of all types of legal documents and agreements tailored to your specific requirements.',
   },
   {
-    icon: Scale,
-    title: 'Contract Review',
-    description: 'Comprehensive analysis of agreements to identify risks and ensure favorable terms for your business or personal needs.',
-  },
-  {
-    icon: Users,
-    title: 'Legal Consultation',
-    description: 'Personalized advisory services providing clarity on legal matters with practical guidance for your situation.',
-  },
-  {
-    icon: Gavel,
-    title: 'Dispute Resolution',
-    description: 'Effective strategies to resolve conflicts through negotiation, mediation, or arbitration when necessary.',
+    icon: FileCheck,
+    title: 'Other Legal Services',
+    description: 'Affidavits, declarations, e-registration (leave and license agreement), flat/shop/office registration online.',
   },
 ];
 
@@ -40,7 +40,7 @@ const Services = () => {
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0A1629] mb-4 font-playfair">Our Legal Services</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We provide comprehensive legal solutions with a focus on drafting agreements and facilitating settlements outside the courtroom.
+            We provide comprehensive legal solutions covering personal matters, society issues, documentation services, and more.
           </p>
         </div>
         

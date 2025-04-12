@@ -3,59 +3,73 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { FileText, Users, Scale, Gavel, Handshake, FileCheck, Building, Landmark } from 'lucide-react';
+import { FileText, Users, Home, Building, FileCheck, Heart, FileSignature, Calendar, Landmark, Scale } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Helmet } from 'react-helmet';
 
 const servicesData = [
   {
-    icon: FileText,
-    title: 'Legal Agreements',
-    description: 'Expertly drafted legal documents tailored to your specific requirements, ensuring your interests are protected.',
-    details: 'Our team specializes in drafting various agreements including employment contracts, non-disclosure agreements, partnership agreements, and more.',
-  },
-  {
-    icon: Handshake,
-    title: 'Out-of-Court Settlements',
-    description: 'Strategic negotiation and mediation services to resolve disputes without lengthy court proceedings.',
-    details: 'We help parties find common ground through expert negotiation strategies, saving time and resources while maintaining relationships.',
-  },
-  {
-    icon: Scale,
-    title: 'Contract Review',
-    description: 'Comprehensive analysis of agreements to identify risks and ensure favorable terms for your business or personal needs.',
-    details: 'Our attorneys meticulously review contracts to identify potential legal issues, unfavorable terms, and suggest improvements to protect your interests.',
-  },
-  {
-    icon: Users,
-    title: 'Legal Consultation',
-    description: 'Personalized advisory services providing clarity on legal matters with practical guidance for your situation.',
-    details: 'Get expert advice on complex legal matters through one-on-one consultations with our experienced attorneys.',
-  },
-  {
-    icon: Gavel,
-    title: 'Dispute Resolution',
-    description: 'Effective strategies to resolve conflicts through negotiation, mediation, or arbitration when necessary.',
-    details: 'We offer alternative dispute resolution methods that are faster, less expensive, and more private than traditional litigation.',
-  },
-  {
-    icon: FileCheck,
-    title: 'Document Verification',
-    description: 'Thorough verification of legal documents to ensure compliance with relevant laws and regulations.',
-    details: 'Our experts verify the authenticity and legality of documents, ensuring they meet all statutory requirements and industry standards.',
+    icon: Heart,
+    title: 'Personal & Family Matters',
+    description: 'Legal assistance for all personal and family-related legal issues.',
+    details: [
+      'Civil Matters',
+      'Family Matters',
+      'Succession Certificate',
+      'Legal Heirship Certificate',
+      'Criminal Matters'
+    ],
   },
   {
     icon: Building,
-    title: 'Corporate Legal Services',
-    description: 'Comprehensive legal support for businesses, from incorporation to day-to-day operations and compliance.',
-    details: 'We provide legal guidance for corporate governance, regulatory compliance, and business transactions to help businesses operate smoothly.',
+    title: 'Co-operative & Society Matters',
+    description: 'Expert guidance for society formation and management legal requirements.',
+    details: [
+      'Co-operative Society Matters',
+      'Formation of Society',
+      'Conveyance Deed / Deemed Conveyance',
+      'Search Reports'
+    ],
   },
   {
-    icon: Landmark,
-    title: 'Real Estate Documentation',
-    description: 'Specialized services for property transactions, lease agreements, and property-related disputes.',
-    details: 'Our team assists with drafting, reviewing, and negotiating real estate contracts, ensuring your property interests are protected.',
+    icon: FileText,
+    title: 'Marriage & Deed Services',
+    description: 'Professional services for marriage registration and various legal deeds.',
+    details: [
+      'Marriage Registration / Marriage Certificate',
+      'Agreement for Sale',
+      'Sale Deed',
+      'Gift Deed',
+      'Release Deed',
+      'Correction Deed',
+      'Partnership Deed',
+      'MOU (Memorandum of Understanding)',
+      'Will',
+      'Power of Attorney'
+    ],
   },
+  {
+    icon: FileCheck,
+    title: 'Other Legal Services',
+    description: 'Additional legal services to meet your various documentation needs.',
+    details: [
+      'Affidavit and Declaration',
+      'E-Registration (Leave and License Agreement)',
+      'Flat / Shop / Office registration online'
+    ],
+  },
+  {
+    icon: FileSignature,
+    title: 'All Legal Drafting',
+    description: 'Professional drafting of all types of legal documents tailored to your requirements.',
+    details: [
+      'Contracts and Agreements',
+      'Legal Notices',
+      'Petitions',
+      'Applications',
+      'Customized Legal Documents'
+    ],
+  }
 ];
 
 const Services = () => {
@@ -63,7 +77,7 @@ const Services = () => {
     <>
       <Helmet>
         <title>Our Services - Kavision Solutions</title>
-        <meta name="description" content="Explore our comprehensive legal services including agreement drafting, settlement services, contract review, and legal consultation." />
+        <meta name="description" content="Explore our comprehensive legal services including personal and family matters, co-operative society services, marriage and deed services, and more." />
       </Helmet>
       <Navbar />
       <main>
@@ -73,7 +87,7 @@ const Services = () => {
               <h1 className="text-4xl font-bold text-primary mb-4 font-playfair">Our Legal Services</h1>
               <p className="text-gray-600 mb-6">Comprehensive legal solutions tailored to your needs</p>
               <p className="text-gray-700">
-                At Kavision Solutions, we provide a wide range of legal services with a focus on drafting agreements and facilitating settlements. Our team of experienced attorneys is dedicated to delivering exceptional results while protecting your interests.
+                At Kavision Solutions, we provide a wide range of legal services covering personal matters, society issues, documentation services, and more. Our team of experienced attorneys is dedicated to delivering exceptional results while protecting your interests.
               </p>
             </div>
           </div>
@@ -81,7 +95,7 @@ const Services = () => {
 
         <section className="py-12">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {servicesData.map((service, index) => (
                 <Card key={index} className="border border-gray-200 hover:shadow-lg transition-all hover:border-primary/30">
                   <CardHeader className="pb-2">
@@ -94,7 +108,12 @@ const Services = () => {
                     <CardDescription className="text-base text-gray-600 mb-4">
                       {service.description}
                     </CardDescription>
-                    <p className="text-gray-700 text-sm mb-4">{service.details}</p>
+                    <h4 className="font-medium text-sm mb-2">Services Include:</h4>
+                    <ul className="text-gray-700 text-sm space-y-1 list-disc pl-4 mb-4">
+                      {service.details.map((detail, i) => (
+                        <li key={i}>{detail}</li>
+                      ))}
+                    </ul>
                     <Button variant="outline" className="text-primary hover:bg-primary/10">
                       Learn More
                     </Button>
