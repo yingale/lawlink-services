@@ -14,27 +14,19 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <Link to="/" className="flex items-center">
-                <span className="text-white font-playfair text-2xl font-bold">LawLink</span>
-                <span className="text-secondary font-playfair text-2xl font-bold">India</span>
+                <span className="text-white font-playfair text-2xl font-bold">Kavision</span> &nbsp;
+                <span className="text-secondary font-playfair text-2xl font-bold">Solution</span>
               </Link>
             </div>
             <p className="text-gray-300 mb-4">
               Providing expert legal services with a focus on legal agreements and out-of-court settlements throughout India.
             </p>
-            <div className="flex space-x-4">
+            {/*<div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-secondary transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-secondary transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-secondary transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-secondary transition-colors">
-                <Instagram size={20} />
-              </a>
-            </div>
+             
+            </div>*/}
           </div>
           
           {/* Quick Links */}
@@ -53,11 +45,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 font-playfair">Our Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Legal Agreements</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Out-of-Court Settlements</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Contract Review</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Legal Consultation</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Dispute Resolution</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Personal & Family Matters</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Co-operative & Society Matters</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Marriage & Deed Services</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Other Legal Services</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">All Legal Drafting</a></li>
             </ul>
           </div>
           
@@ -67,15 +59,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="mt-1 flex-shrink-0 text-secondary" />
-                <p className="text-gray-300">123 Law Street, New Delhi, 110001, India</p>
+                <p className="text-gray-300">Office No. 9, Sai Vitthal Plaza, Dr. Babasaheb Ambedkar Chowk, Lodha Heaven, Nilje, Dombivali - 421204</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="flex-shrink-0 text-secondary" />
-                <p className="text-gray-300">+91 98765 43210</p>
+                <p className="text-gray-300"><a href='tel:+91 93262 68321'>+91 93262 68321</a> / <a href='tel:+91 95945 58335'>+91 95945 58335</a></p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="flex-shrink-0 text-secondary" />
-                <p className="text-gray-300">info@lawlink-india.com</p>
+                <p className="text-gray-300"><a href='mailto:kavisionsolution@gmail.com'>kavisionsolution@gmail.com</a> / <a href='mailto:oholadv@gmail.com'>oholadv@gmail.com</a></p>
               </div>
             </div>
           </div>
@@ -84,15 +76,14 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} LawLink India. All rights reserved.
+              © {currentYear} Kavision Solution. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm mt-2 md:mt-0">
-              Developed and maintained by XYZ Solutions
+              Developed and maintained by <a href="https://www.greenthread.in/" target='_blank'>Greenthread LLP</a>
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-secondary text-sm transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-secondary text-sm transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-secondary text-sm transition-colors">Disclaimer</a>
             </div>
           </div>
         </div>

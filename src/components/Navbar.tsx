@@ -17,13 +17,13 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <div className="h-10 w-10 md:h-12 md:w-12 rounded-full bg-white overflow-hidden">
             <img 
-              src="/lovable-uploads/3232c0d4-1808-40fd-8fb4-ebe3c3300a05.png" 
+              src="/uploads/kavisionsolutions-logo.png" 
               alt="Kavision Solutions Logo" 
               className="h-full w-full object-cover"
             />
           </div>
           <div>
-            <span className="text-white font-playfair text-xl md:text-2xl font-bold">Kavision</span>
+            <span className="text-white font-playfair text-xl md:text-2xl font-bold">Kavision</span>&nbsp;
             <span className="text-[#4299e1] font-playfair text-xl md:text-2xl font-bold">Solutions</span>
           </div>
         </Link>

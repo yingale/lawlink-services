@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { FileText, Users, Scale, Home, Building, FileCheck, Heart, FileSignature } from 'lucide-react';

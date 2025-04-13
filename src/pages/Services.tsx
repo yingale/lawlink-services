@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -137,11 +136,11 @@ const Services = () => {
               <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
                 <div className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
-                  <span>+91 1234567890</span>
+                  <span>                        <a href='tel:+91 93262 68321'>+91 93262 68321</a> / <a href='tel:+91 95945 58335'>+91 95945 58335</a>                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-5 w-5" />
-                  <span>info@kavisionsolutions.com</span>
+                  <span><a href='mailto:kavisionsolution@gmail.com'>kavisionsolution@gmail.com</a> / <a href='mailto:oholadv@gmail.com'>oholadv@gmail.com</a></span>
                 </div>
               </div>
               

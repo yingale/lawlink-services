@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <section className="relative bg-[#0A1629] text-white py-20 md:py-28">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute inset-0 bg-[url('/uploads/legal-god.jpeg')] bg-cover bg-center opacity-10"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
@@ -27,7 +27,7 @@ const Hero = () => {
                 Book a Consultation
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button asChild size="lg" variant="outline" className="border-white text-black hover:bg-[#4299e1]/90">
               <Link to="/services" className="flex items-center gap-2">
                 Our Services <ArrowRight size={16} />
               </Link>

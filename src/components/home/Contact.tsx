@@ -33,7 +33,7 @@ const ContactInfo = () => {
               </div>
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                <Input id="phone" placeholder="+91 98765 43210" className="w-full" />
+                <Input id="phone" placeholder="+91 12345 67891" className="w-full" />
               </div>
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
@@ -57,7 +57,7 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Office Address</h4>
-                  <p className="text-gray-600">123 Law Street, New Delhi, 110001, India</p>
+                  <p className="text-gray-600">Office No. 9, Sai Vitthal Plaza, Dr. Babasaheb Ambedkar Chowk, Lodha Heaven, Nilje, Dombivali - 421204</p>
                 </div>
               </div>
               
@@ -67,8 +67,8 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone Number</h4>
-                  <p className="text-gray-600">+91 98765 43210</p>
-                  <p className="text-gray-600">+91 11 2345 6789</p>
+                  <p className="text-gray-600"><a href='tel:+91 93262 68321'>+91 93262 68321</a></p>
+                  <p className="text-gray-600"><a href='tel:+91 95945 58335'>+91 95945 58335</a></p>
                 </div>
               </div>
               
@@ -78,8 +78,8 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Email Address</h4>
-                  <p className="text-gray-600">info@lawlink-india.com</p>
-                  <p className="text-gray-600">support@lawlink-india.com</p>
+                  <p className="text-gray-600"><a href='mailto:kavisionsolution@gmail.com'>kavisionsolution@gmail.com</a></p>
+                  <p className="text-gray-600">ohaladv@gmail.com</p>
                 </div>
               </div>
               
@@ -89,8 +89,7 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Business Hours</h4>
-                  <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+                  <p className="text-gray-600">Monday - Saturday: 10:00 AM - 9:00 PM</p>
                   <p className="text-gray-600">Sunday: Closed</p>
                 </div>
               </div>
@@ -99,7 +98,15 @@ const ContactInfo = () => {
             {/* Map */}
             <div className="rounded-lg overflow-hidden shadow-md h-64 bg-gray-200">
               <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-500">
-                Interactive Google Map will be embedded here
+              <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.7571457081663!2d73.07045117510796!3d19.162104935803793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bfeff06f331b%3A0x694d8b7dc8d7b210!2sAmbedkar%20chowk%2C%20i%2013%2C%20Mumbai%2C%20Nilje%20Gaon%2C%20Maharashtra%20421204!5e0!3m2!1sen!2sin!4v1744436558059!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={false} 
+                    loading="lazy" 
+                    title="Kavision Solutions office location"
+                  ></iframe>
               </div>
             </div>
           </div>

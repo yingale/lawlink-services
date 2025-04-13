@@ -74,12 +74,11 @@ const Contact = () => {
                       className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                     >
                       <option value="">Select a service</option>
-                      <option value="agreements">Legal Agreements</option>
-                      <option value="settlements">Out-of-Court Settlements</option>
-                      <option value="review">Contract Review</option>
-                      <option value="consultation">Legal Consultation</option>
-                      <option value="dispute">Dispute Resolution</option>
-                      <option value="other">Other Services</option>
+                      <option value="agreements">Personal & Family Matters</option>
+                      <option value="settlements">Co-operative & Society Matters</option>
+                      <option value="review">Marriage & Deed Services</option>
+                      <option value="consultation">Other Legal Services</option>
+                      <option value="dispute">All Legal Drafting</option>
                     </select>
                   </div>
                   
@@ -105,9 +104,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-gray-800 mb-1">Office Address</h3>
                         <p className="text-gray-600">
-                          123 Legal Avenue<br />
-                          Sector 42, Gurugram<br />
-                          Haryana, India 122001
+                        Office No. 9, Sai Vitthal Plaza,<br /> Dr. Babasaheb Ambedkar Chowk, <br />Lodha Heaven, Nilje,<br /> Dombivali - 421204
                         </p>
                       </div>
                     </div>
@@ -120,9 +117,10 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-800 mb-1">Phone Numbers</h3>
+
                         <p className="text-gray-600">
-                          Main: +91 1234567890<br />
-                          Support: +91 9876543210
+                          Adv. Pritam Ohol: <a href='tel:+91 93262 68321'>+91 93262 68321</a> <br />
+                          Sumit Kedare: <a href='tel:+91 95945 58335'>+91 95945 58335</a>
                         </p>
                       </div>
                     </div>
@@ -136,8 +134,8 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-gray-800 mb-1">Email Addresses</h3>
                         <p className="text-gray-600">
-                          Info: info@kavisionsolutions.com<br />
-                          Support: support@kavisionsolutions.com
+                        <a href='mailto:kavisionsolution@gmail.com'>kavisionsolution@gmail.com</a><br />
+                        <a href='mailto:oholadv@gmail.com'>oholadv@gmail.com</a>
                         </p>
                       </div>
                     </div>
@@ -151,8 +149,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-gray-800 mb-1">Business Hours</h3>
                         <p className="text-gray-600">
-                          Monday - Friday: 9:00 AM - 6:00 PM<br />
-                          Saturday: 10:00 AM - 2:00 PM<br />
+                          Monday - Saturday: 10:00 AM - 9:00 PM<br />
                           Sunday: Closed
                         </p>
                       </div>
@@ -162,7 +159,7 @@ const Contact = () => {
                 
                 <div className="rounded-lg overflow-hidden h-80 shadow-md">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28453.168137478302!2d77.02116738004242!3d28.45769517080287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18a984a8b199%3A0x58ae34c4a027eedd!2sSector%2042%2C%20Gurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1648987325297!5m2!1sen!2sin" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.7571457081663!2d73.07045117510796!3d19.162104935803793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bfeff06f331b%3A0x694d8b7dc8d7b210!2sAmbedkar%20chowk%2C%20i%2013%2C%20Mumbai%2C%20Nilje%20Gaon%2C%20Maharashtra%20421204!5e0!3m2!1sen!2sin!4v1744436558059!5m2!1sen!2sin" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 

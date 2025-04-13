@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   const benefits = [
-    'Expert team of experienced attorneys',
-    'Specialized in agreement drafting and settlements',
-    'Client-focused approach with personalized attention',
-    'Transparent fee structure with no hidden costs',
-    'Proven track record with satisfied clients across India'
+    'Team of expert legal professionals',
+    'Specialization in legal drafting and documentation',
+    'Transparent and affordable fee structure',
+    'Personalized attention and hassle-free service',
+    'Trusted by clients across India'
   ];
 
   return (
@@ -20,7 +20,7 @@ const About = () => {
           <div className="relative">
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                src="/uploads/hammer.jpeg" 
                 alt="Legal professionals working" 
                 className="w-full h-full object-cover"
               />
@@ -35,13 +35,19 @@ const About = () => {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0A1629] mb-6 font-playfair">About Kavision Solutions</h2>
             <p className="text-gray-700 mb-4">
-              Founded in 2018, Kavision Solutions has established itself as a trusted legal service provider specializing in agreement drafting and out-of-court settlements across India.
+            Kavision Solutions was founded in 2022 with a clear mission — to simplify legal processes and provide accessible, reliable, and client-focused legal services across India.
             </p>
             <p className="text-gray-700 mb-6">
-              Our team of experienced attorneys brings diverse expertise and a deep understanding of Indian legal frameworks to provide practical solutions tailored to each client's unique needs.
+            We specialize in agreement drafting, property documentation, and out-of-court settlements, offering practical legal solutions with precision and integrity. Our team of experienced advocates and legal consultants brings a deep understanding of Indian law, enabling us to handle complex legal matters efficiently.
             </p>
-            
+            <p className="text-gray-700 mb-6">
+            From family and civil disputes to property deeds, society formation, e-registrations, and affidavits, we offer a wide range of services tailored to individual, commercial, and co-operative needs.
+
+</p>
             <div className="space-y-3 mb-8">
+            
+            <h2 className="text-lg font-medium italic">What Sets Us Apart</h2>
+
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-2">
                   <CheckCircle className="text-[#4299e1] flex-shrink-0 mt-1" size={20} />
